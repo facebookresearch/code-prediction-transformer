@@ -18,7 +18,7 @@ UNK = "<unk_token>"
 def get_leaf_nodes(ast, id_type):
     # get ids for special leaf types: attr, num, name, param
     if id_type == "attr":
-        types_ = {"attr"}:
+        types_ = {"attr"}
     elif id_type == "num":
         types_ = {"Num"}
     elif id_type == "name":
