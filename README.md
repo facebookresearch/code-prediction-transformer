@@ -24,6 +24,8 @@ If you use our code/implementation, please cite our paper: https://arxiv.org/abs
 
 **dataset.py**: contains class objects (BaseSetup, BaseVocab, BaseDataset) for setting up the dataset and vocab for the model. Each model inherits from these class objects to fit the model's specific setup requirements. The BaseDataset object also contains the collate function for processing batches.
 
+**train.py**: contains code to carry out the training and report intermittent metrics. The entry point into this code is the train(...) function which should be called from a run script.
+
 # Model
 **model.py** contains the models used in this paper. SeqRNN uses **LSTMModel**, and the other models 
 except Code2seq use **TransformerModel**. We used the following hyperparameters for our implementation:
